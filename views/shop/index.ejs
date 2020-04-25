@@ -1,68 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="/bower_components/bootstrap/dist/css/bootstrap.css"
-    />
-    <link
-      rel="stylesheet"
-      href="/bower_components/owl.carousel/dist/assets/owl.theme.default.css"
-    />
-
-    <link
-      rel="stylesheet"
-      href="/bower_components/owl.carousel/dist/assets/owl.carousel.min.css"
-    />
-    <link rel="stylesheet" href="/css/main.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap"
-      rel="stylesheet"
-    />
-    <title>Clown Clothing</title>
+<%-include("../includes/head.ejs")%>
   </head>
   <body>
     <div class="container">
-      <nav
-        class="navbar navbar-expand-lg navbar-light bg-light shadow p-3 mb-5"
-      >
-        <a class="navbar-brand" href="#">Clown Clothing</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav m-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#"
-                >Home <span class="sr-only">(current)</span></a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Women</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Men</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Childrem</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Cart</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+     <%-include("../includes/navigation.ejs")%>
     </div>
 
     <div class="container mt-3">
@@ -174,6 +114,7 @@
     </div>
 
     <div class="container">
+      <hr />
       <div class="row">
         <div class="col-md-12 p-4">
           <h2>Men`s Clothing & <a href="#"> more here</a></h2>
@@ -248,6 +189,7 @@
           </div>
         </div>
       </div>
+      <hr />
       <div class="row">
         <div class="col-md-12 p-4">
           <h2>Women`s Clothing & <a href="#"> more here</a></h2>
