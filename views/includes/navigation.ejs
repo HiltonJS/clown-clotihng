@@ -1,36 +1,43 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light shadow p-3 mb-5">
-  <a class="navbar-brand" href="#">Clown Clothing</a>
-  <button
-    class="navbar-toggler"
-    type="button"
-    data-toggle="collapse"
-    data-target="#navbarSupportedContent"
-    aria-controls="navbarSupportedContent"
-    aria-expanded="false"
-    aria-label="Toggle navigation"
-  >
-    <span class="navbar-toggler-icon"></span>
-  </button>
+<header>
+  <nav class="navbar navbar-expand-lg navbar-light shadow p-3 mb-5">
+    <img src="/images/cover.png" width="190" height="70" alt="" />
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav m-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="/"
-          >Home <span class="sr-only">(current)</span></a
-        >
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Women</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Men</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Childrem</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Cart</a>
-      </li>
-    </ul>
-  </div>
-</nav>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav m-auto">
+        <li class="nav-item <%= path === '/' ? 'active' : '' %>">
+          <a class="nav-link" href="/">Home </a>
+        </li>
+        <li class="nav-item <%= path === '/men' ? 'active' : '' %>">
+          <a class="nav-link" href="/men">Men </a>
+        </li>
+        <li class="nav-item <%= path === '/women' ? 'active' : '' %>">
+          <a class="nav-link" href="/women">Women </a>
+        </li>
+        <li class="nav-item <%= path === '/admin-products' ? 'active' : '' %>">
+          <a class="nav-link" href="/admin-products">Admin Products </a>
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link <%= path === '/cart' ? 'active' : '' %>"
+            href="/cart"
+            >Cart</a
+          >
+        </li>
+        <li class="nav-item <%= path === '/add-product' ? 'active' : '' %>">
+          <a class="nav-link" href="/add-product">Add Product </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>
